@@ -1,0 +1,68 @@
+.header {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  background-color: rgba(41, 168, 58, 0.3);
+  box-shadow: 0px 14px 5px -5px rgba(0, 0, 0, 0.6);
+}
+
+.header div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.mainNavLink {
+  text-decoration: none;
+  color: #000;
+  font-size: 25px;
+  padding: 5px;
+  font-weight: 600;
+}
+
+.active {
+  color: rgb(64, 64, 207);
+  border-bottom: 2px solid rgb(64, 64, 207);
+}
+
+.buttonAddDish {
+  padding: 10px;
+  height: max-content;
+  background-color: rgb(107, 107, 255);
+  font-size: 20px;
+  font-weight: 600;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 1px 10px 5px rgba(0, 0, 0, 0.38);
+}
+
+.buttonAddDish:hover {
+  background-color: rgb(2, 2, 107);
+}
+
+@media screen and (max-width: 768px) {
+  .mainNav {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+  }
+
+  .active {
+    color: rgb(64, 64, 207);
+    border: none;
+  }
+
+  .mainNavLink {
+    font-size: 20px;
+  }
+
+  .buttonAddDish {
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mainNavLink:not(:last-child) {
+    margin-right: 15px;
+  }
+}

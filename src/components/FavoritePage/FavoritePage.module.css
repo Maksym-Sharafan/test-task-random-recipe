@@ -1,0 +1,10 @@
+.favoriteListWrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 30px;
+}
+
+.favoriteItem {
+  list-style-type: none;
+}
